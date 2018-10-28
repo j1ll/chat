@@ -1,0 +1,16 @@
+nav.navbar.navbar-default(role='navigation')
+  ul
+    li#username= userName
+  ul.nav.navbar-nav
+    li: a(href='/') Главная
+    li: a(href='/chat') Chat
+  ul.nav.navbar-nav.navbar-right
+    if userName!=='anon'
+      form(method='POST' action="/logout" name='logout-form')
+      li: a#logout-btn(href="/") Выйти
+      script
+        include ./logoutScript.js
+    else
+      li: a(href='/login') Войти
+script
+  include ../partials/userName.js

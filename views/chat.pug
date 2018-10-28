@@ -1,0 +1,22 @@
+extends layouts/main
+
+block data
+  - var pageTitle = "Чат"
+  // - var username = JSON.stringify(user||'anon').slice(1,-1)
+
+
+block body
+  div#room
+    ul#chat-messages
+    form(name='chat-form')
+      .chat-form-element
+        label(for="message1") Enter message1
+        input(autocomplete="off" autofocus placeholder="Сообщение..." type="text" name="message1" id="message1")
+      .chat-form-element
+        button#submit-button(disabled type="submit" name="submitbutton") Submit2
+  button#reconnect-button(disabled ) Reconnect
+  button#debug-button(disabled ) Debug
+  script(src="/socket.io/socket.io.js")
+  script
+    include partials/chatScript.js
+  // script

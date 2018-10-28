@@ -1,0 +1,16 @@
+extends layouts/main
+
+block data
+  - var pageTitle = "storagetest"
+  // - var username = JSON.stringify(user||'anon').slice(1,-1)
+
+
+block body
+  form(name='storage-form')
+    label(for="storagedata") Enter storage data
+    input(autocomplete="off" autofocus placeholder="storagedata" type="text" name="storagedata" id="storagedata")
+    button#submit-button(type="submit" name="submitbutton") Set storage data
+    button#clear-button(type="button" name="clearbutton") Clear storage data
+  script
+    include partials/localStorage.js
+  // script

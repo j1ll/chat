@@ -1,0 +1,10 @@
+
+extends layouts/main
+
+block data
+  - var pageTitle = `Ошибка ${error.status}`;
+
+block body
+  h1= pageTitle
+  h2= message
+  pre #{error.stack}

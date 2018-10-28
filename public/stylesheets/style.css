@@ -1,0 +1,29 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+.notification-message{
+  font-style: italic;
+  color: grey;
+  font-variant-caps: small-caps;
+}
+.chat-message{
+  
+}
+code {
+  background-color: gainsboro;
+}
+#hello-user{
+  background-color: lightgray;
+}
+.form-group{
+  padding: 5px;
+  border: cadetblue dotted;
+}
+#chat-messages{
+  border: solid 1px black;
+}
