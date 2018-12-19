@@ -1,4 +1,12 @@
-## Welcome to GitHub Pages
+---
+layout: default
+---
+
+
+## {{ site.url }}
+
+## {{ site.baseurl }}
+
 
 You can use the [editor on GitHub](https://github.com/j1ll/j1ll.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
